@@ -81,14 +81,6 @@ const MovieDetails = () => {
           <p>{movieDetails?.overview}</p>
         </div>
       </div>
-      <button
-        className={css.button}
-        onClick={() => {
-          navigate(from);
-        }}
-      >
-        Go back
-      </button>
       <h3 className={css.addInfo}>Additional information</h3>
       <NavLink to="cast" state={{ from }} className={css.addInfoCast}>
         <p>Cast</p>
@@ -97,6 +89,14 @@ const MovieDetails = () => {
         <p>Reviews</p>
       </NavLink>
       <Outlet />
+      <button
+        className={css.button}
+        onClick={() => {
+          navigate(from);
+        }}
+      >
+        Go back
+      </button>
     </div>
   );
 };
