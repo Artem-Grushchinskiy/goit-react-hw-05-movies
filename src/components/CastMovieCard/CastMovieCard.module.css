@@ -10,6 +10,7 @@
 
 .castItem {
   width: 185px;
+  min-height: 330px;
   box-shadow: 0 5px 10px 0 rgb(0 0 0 / 50%);
   padding: 5px;
 }
