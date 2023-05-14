@@ -80,6 +80,14 @@ const MovieDetails = () => {
           <h3 className={css.about}>About</h3>
           <p>{movieDetails?.overview}</p>
         </div>
+        <button
+          className={css.button}
+          onClick={() => {
+            navigate(from);
+          }}
+        >
+          Go back
+        </button>
       </div>
       <h3 className={css.addInfo}>Additional information</h3>
       <NavLink to="cast" state={{ from }} className={css.addInfoCast}>
