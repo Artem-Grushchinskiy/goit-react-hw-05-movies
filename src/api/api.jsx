@@ -1,5 +1,4 @@
 import axios from 'axios';
-import PropTypes from 'prop-types';
 
 const instance = axios.create({
   baseURL: 'https://api.themoviedb.org/3',
@@ -45,22 +44,4 @@ export const getMovieReview = async (id, page) => {
     },
   });
   return data;
-};
-
-getMovieById.propTypes = {
-  id: PropTypes.string.isRequired,
-};
-
-searchMovie.propTypes = {
-  searchQuery: PropTypes.string.isRequired,
-  page: PropTypes.string.isRequired,
-};
-
-getMovieCast.propTypes = {
-  id: PropTypes.string.isRequired,
-};
-
-getMovieReview.propTypes = {
-  id: PropTypes.string.isRequired,
-  page: PropTypes.string.isRequired,
 };

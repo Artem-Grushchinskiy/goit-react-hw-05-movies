@@ -7,8 +7,10 @@ import Navbar from './modules/Navbar/Navbar';
 const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
 const MoviesPage = lazy(() => import('./pages/MoviesPage/MoviesPage'));
 const MovieDetails = lazy(() => import('./pages/MovieDetails/MovieDetails'));
-const CastMovie = lazy(() => import('./pages/CastMovie/CastMovie'));
-const ReviewsMovies = lazy(() => import('./pages/ReviewsMovies/ReviewsMovies'));
+const CastMovie = lazy(() => import('./components/CastMovie/CastMovie'));
+const ReviewsMovies = lazy(() =>
+  import('./components/ReviewsMovies/ReviewsMovies')
+);
 
 export const App = () => {
   return (

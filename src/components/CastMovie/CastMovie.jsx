@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
 import { getMovieCast } from 'api/api';
-import CastMovieCard from '../../components/CastMovieCard/CastMovieCard';
+import CastMovieCard from '../CastMovieCard/CastMovieCard';
 
 const CastMovie = () => {
   const [castMovie, setCastMovie] = useState();

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
 import { getMovieReview } from 'api/api';
-import ReviewsMoviesCard from '../../components/ReviewsMovieCard/ReviewsMovieCard';
+import ReviewsMoviesCard from '../ReviewsMovieCard/ReviewsMovieCard';
 
 const ReviewsMovies = () => {
   const [reviewMovie, setReviewMovie] = useState();
